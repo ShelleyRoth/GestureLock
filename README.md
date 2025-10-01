@@ -4,6 +4,7 @@ Unlock a lock using hand gestures detected by an ultrasonic sensor.
 
 ## Features
 - **Ultrasonic sensor (HC-SR04):** detects near / medium / far hand gestures.
+- **Digital Humidity and Temperature Sensor (DHT-11):** measures ambient temperature and humidity to refine speed of sound calculation
 - **RGB LED:** shows lock status (red = locked, yellow = waiting, green = unlocked).
 - **Buzzer:** gives audio feedback (beeps, error tones).
 - **Servo motor:** acts as the lock (rotates when unlocked).
@@ -12,7 +13,9 @@ Unlock a lock using hand gestures detected by an ultrasonic sensor.
 ## Hardware
 - Arduino UNO
 - HC-SR04 ultrasonic sensor
+- DHT-11 humidity and temperature sensor
 - RGB LED + resistors
+- Button
 - Passive buzzer
 - Servo motor
 - Jumper wires, breadboard
