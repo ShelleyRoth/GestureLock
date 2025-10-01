@@ -30,6 +30,8 @@
 #define INT_MEDIUM 1
 #define INT_FAR 2
 
+#define maxPasswordLength 4; // The maximum length of the password
+
 // Button
 #define BUTTON_PIN 2 // digital pin connected to the button
 
@@ -49,8 +51,10 @@ float speedOfSoundMpS; // Stores calculated speed of sound in meters per second
 float speedOfSoundCMpMS; // Stores calculated speed of sound in cm per microsecond
 int iterations = 5; // to calculate average duration from a given object and stabalize output readings
 
-int correctPasscode[3] = {0, 1, 2};
-int userPasscode[3] = {};
+// Password-related variables
+int storedLength;
+int storedUserPasscode[maxPasswordLength][2]; // [i][0]=gestureID, [i][1]=distanceZone
+bool hasPassword = false;
 
 void setup() {
   // put your setup code here, to run once:
